@@ -140,15 +140,6 @@ def generate_stirr_m3u(sort='name'):
 if __name__ == "__main__":
     logging.info("Starting playlist generation process...")
 
-    # Define specific regions you want for multi-region services
-    pluto_regions_to_generate = ['us', 'all'] # Example: US and a combined 'all' list
-    plex_regions_to_generate = ['us', 'all']
-    samsung_regions_to_generate = ['us', 'all']
-
-    generate_pluto_m3u(regions=pluto_regions_to_generate, sort='name')
-    generate_plex_m3u(regions=plex_regions_to_generate, sort='name')
-    generate_samsungtvplus_m3u(regions=samsung_regions_to_generate, sort='name')
     generate_stirr_m3u(sort='name')
-    generate_tubi_m3u()
 
     logging.info("Playlist generation process finished.")
