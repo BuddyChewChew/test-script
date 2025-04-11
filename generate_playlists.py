@@ -96,7 +96,7 @@ def format_extinf(channel_id, tvg_id, tvg_chno, tvg_name, tvg_logo, group_title,
 # --- Service Functions ---
 def generate_stirr_m3u(sort='name'):
     """Generates M3U playlist for Stirr."""
-    STIRR_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Stirr/.channels.json.gz'
+    STIRR_URL = 'https://raw.githubusercontent.com/pigzillaaaaa/iptv-scraper/refs/heads/main/my-iptv/my-iptv-channels-data.json'
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/str-{id}.m3u8'
     EPG_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Stirr/all.xml.gz' # Note: master branch, not refs/heads/master for EPG usually
 
